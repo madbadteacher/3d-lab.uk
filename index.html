@@ -33,7 +33,19 @@
 
 <section id="contact">
   <h3>Contact Us</h3>
-  <p>Have a question or want to request a quote? Email us at <a href="mailto:info@3d-lab.uk">info@3d-lab.uk</a></p>
+  <form action="https://formspree.io/f/xpwdazwl" method="POST" style="max-width: 500px; margin: auto; text-align: left;">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="_replyto" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea><br>
+
+    <button type="submit" style="padding: 10px 20px; background-color: #333; color: white; border: none; cursor: pointer;">Send Message</button>
+  </form>
+  <p style="text-align: center; margin-top: 20px;">Or email us directly at <a href="mailto:info@3d-lab.uk">info@3d-lab.uk</a></p>
 </section>
   
   <section id="services">

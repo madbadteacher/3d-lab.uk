@@ -18,7 +18,7 @@ body {
   padding-bottom: 100px;
 }
 
-/* Shared Box Styling */
+/* Shared Box Styling with Floating Effect */
 header,
 section,
 form,
@@ -70,6 +70,7 @@ nav ul li a {
 /* Section Defaults */
 #services, #about, #contact {
   text-align: center;
+  margin-top: 40px;
 }
 
 /* Form */
@@ -81,6 +82,7 @@ form {
   padding: 30px;
   border: 1px solid #999;
   border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
 input[type="text"],

@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
   font-family: 'IBM Plex Mono', monospace;
   line-height: 1.6;
@@ -16,15 +17,20 @@ body {
   padding-bottom: 100px;
 }
 
-header, section, form, footer {
+/* Shared Box Styling */
+header,
+section,
+form,
+footer {
   background-color: rgba(255, 255, 255, 0.85);
   padding: 30px 20px;
-  margin: 30px auto;
+  margin: 20px auto;
   border-radius: 6px;
   max-width: 1000px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Header */
 header {
   background-color: rgba(51, 51, 51, 0.9);
   color: #fff;
@@ -47,11 +53,12 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* Hero Section */
 #hero {
   background: none;
   text-align: center;
   color: #fff;
-  padding: 100px 20px;
+  padding: 60px 20px;
 }
 
 #hero h2 {
@@ -59,9 +66,15 @@ nav ul li a {
   text-shadow: 1px 1px 2px #000;
 }
 
+/* Section Defaults */
+#services, #about, #contact {
+  text-align: center;
+}
+
+/* Form */
 form {
   max-width: 500px;
-  margin: 40px auto;
+  margin: 30px auto;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.95);
   padding: 30px;
@@ -92,6 +105,7 @@ button[type="submit"] {
   letter-spacing: 1px;
 }
 
+/* Footer */
 footer {
   background-color: rgba(51, 51, 51, 0.9);
   color: #fff;
@@ -104,7 +118,7 @@ footer {
 /* Blueprint SVG Animation */
 .blueprint-container {
   max-width: 1000px;
-  margin: 40px auto;
+  margin: 20px auto;
   text-align: center;
 }
 
@@ -114,7 +128,7 @@ footer {
   fill: none;
   stroke-dasharray: 3000;
   stroke-dashoffset: 3000;
-  animation: draw-blueprint 5s ease-out forwards;
+  animation: draw-blueprint 4s ease-out forwards;
 }
 
 @keyframes draw-blueprint {

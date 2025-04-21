@@ -9,20 +9,35 @@
 body {
   font-family: 'Courier New', Courier, monospace;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #111; /* Strong contrast for better legibility */
+  background: url('blueprint-bg.png') no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  color: #111;
   padding-bottom: 100px;
 }
 
+/* Reusable Box Styling for Legibility */
+header,
+section,
+form,
+footer {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px 20px;
+  margin: 30px auto;
+  border-radius: 6px;
+  max-width: 1000px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
 header {
-  background: #333;
+  background-color: rgba(51, 51, 51, 0.9);
   color: #fff;
-  padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
-  margin-top: 10px;
   font-size: 2em;
 }
 
@@ -42,10 +57,11 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* Hero Section */
 #hero {
-  background: url('3d-printer-city.png') no-repeat center center/cover;
-  color: #fff;
+  background: none; /* clear hero bg for blueprint to show */
   text-align: center;
+  color: #fff;
   padding: 100px 20px;
 }
 
@@ -54,18 +70,9 @@ nav ul li a {
   text-shadow: 1px 1px 2px #000;
 }
 
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
+/* Content Sections */
 #services, #about, #contact {
-  background-color: #fff;
-  margin: 30px auto;
-  max-width: 800px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 40px 20px;
+  text-align: center;
 }
 
 /* Form Styles */
@@ -73,7 +80,7 @@ form {
   max-width: 500px;
   margin: 40px auto;
   text-align: left;
-  background-color: #eee;
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 30px;
   border: 1px solid #999;
   border-radius: 6px;
@@ -108,13 +115,12 @@ button[type="submit"] {
   letter-spacing: 1px;
 }
 
+/* Footer */
 footer {
-  background: #333;
+  background-color: rgba(51, 51, 51, 0.9);
   color: #fff;
   text-align: center;
-  padding: 15px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
   margin-top: 60px;
+  padding: 15px;
+  border-radius: 0;
 }

@@ -6,6 +6,17 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Inline Animated SVG Blueprint -->
+  <div class="blueprint-container">
+    <svg baseProfile="tiny" height="1000px" version="1.2" width="1000px" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs />
+      <!-- Inserted polyline paths from SVG (abbreviated here, you'll paste full content) -->
+      <!-- Example: <polyline fill="none" points="..." /> -->
+      <!-- Use full SVG polyline data from the file here -->
+      <!-- Replace this comment with svg_content -->
+    </svg>
+  </div>
+
   <header>
     <h1>Welcome to 3D-Lab.uk</h1>
     <nav>
@@ -21,36 +32,31 @@
     <h2>3D Printing • Prototypes • Architectural Models</h2>
   </section>
 
-<section id="about">
-  <h3>About 3D-Lab.uk</h3>
-  <p>Born from a passion for precision and creativity, 3D-Lab.uk combines cutting-edge technology with old-school craftsmanship. We help bring your ideas to life through expertly made prototypes and architectural models.</p>
-</section>
-
-<section id="about">
-  <h3>About 3D-Lab.uk</h3>
-  <p>Born from a passion for precision and creativity, 3D-Lab.uk combines cutting-edge technology with old-school craftsmanship. We help bring your ideas to life through expertly made prototypes and architectural models.</p>
-</section>
-
-<section id="contact">
-  <h3>Contact Us</h3>
-  <form action="https://formspree.io/f/xpwdazwl" method="POST" style="max-width: 500px; margin: auto; text-align: left;">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
-
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="_replyto" required style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea><br>
-
-    <button type="submit" style="padding: 10px 20px; background-color: #333; color: white; border: none; cursor: pointer;">Send Message</button>
-  </form>
-  <p style="text-align: center; margin-top: 20px;">Or email us directly at <a href="mailto:info@3d-lab.uk">info@3d-lab.uk</a></p>
-</section>
-  
   <section id="services">
     <h3>Our Services</h3>
     <p>We create detailed prototypes, 3D architectural models, and bespoke 3D prints with precision and care.</p>
+  </section>
+
+  <section id="about">
+    <h3>About 3D-Lab.uk</h3>
+    <p>Born from a passion for precision and creativity, 3D-Lab.uk combines cutting-edge technology with old-school craftsmanship.</p>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <form action="https://formspree.io/f/xgejjezd" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email us at <a href="mailto:info@3d-lab.uk">info@3d-lab.uk</a></p>
   </section>
 
   <footer>

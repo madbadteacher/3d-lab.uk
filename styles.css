@@ -1,3 +1,4 @@
+
 /* Global Reset */
 * {
   margin: 0;
@@ -9,7 +10,7 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
   line-height: 1.6;
-  background: url('blueprint-bg.png') no-repeat center center fixed;
+  background: url('images/blueprint-bg.webp') no-repeat center center fixed;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
@@ -115,24 +116,10 @@ footer {
   border-radius: 0;
 }
 
-/* Blueprint SVG Animation */
-.blueprint-container {
-  max-width: 1000px;
-  margin: 20px auto;
-  text-align: center;
-}
-
-.blueprint-container svg polyline {
-  stroke: #fff;
-  stroke-width: 1;
-  fill: none;
-  stroke-dasharray: 3000;
-  stroke-dashoffset: 3000;
-  animation: draw-blueprint 4s ease-out forwards;
-}
-
-@keyframes draw-blueprint {
-  to {
-    stroke-dashoffset: 0;
-  }
+/* Blueprint SVG Container */
+.blueprint-container object {
+  max-height: 500px;
+  width: 100%;
+  display: block;
+  margin: auto;
 }

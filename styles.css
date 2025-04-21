@@ -9,7 +9,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
   line-height: 1.6;
-  background: url('bg-bluprint.png') no-repeat center center fixed;
+  background: url('bg-blueprint.png') no-repeat center center fixed;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
